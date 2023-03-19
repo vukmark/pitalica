@@ -1,0 +1,13 @@
+In this file write each line to folder/file related to `src` dir
+For example:
+administrator/components/com_component_one
+administrator/components/com_component_two
+administrator/manifests/packages/pkg_component_one.xml
+plugins/user/custom_plugin.php
+
+Then when you run `bin/create_symlinks.sh` it will read each line
+of this file and will create symlink to `wwwNameOfJoomlaInstallation`
+
+From there you edit files inside `src` and as it's symlinked to
+all `www*` joomla installation, it will automatically change it
+there too.
